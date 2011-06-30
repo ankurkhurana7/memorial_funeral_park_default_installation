@@ -32,11 +32,14 @@ function site1_profile_modules() {
     'token', 
     
     // Misc
-    'admin_menu', 'pathauto', 'nodecomment', 'sharedemail', 'nice_menus',
+    'admin_menu', 'nodecomment', 'sharedemail', 'nice_menus',
     
     
     // Features
     'features',
+    
+    //custom
+   'obit_content_type_module', 'obit_view', 'commentmodule', 
     
   );
 
