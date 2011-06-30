@@ -1,1 +1,43 @@
 intialised prioject!
+best of luck for the installation :-)
+
+
+content of the package other then default drupal :-
+-> two installation profiles in the profiles folder default and site1
+-> site1.com folder in the sites folder with theme4
+-> 13 modules in the sites/all/modules directories 
+-> this is a multisite drupal installation (you need to understand the multisite drupal installation refer drupal.org)
+
+things that are not decided yet:-
+-> node are to be created on other system
+
+
+How to use this code
+====================
+1. Clone this repository from Github (you need to understand git terminology. http://oreillynet.com/pub/e/1394)
+2. I am assuming you have Apache setup and is pointing to the same directory as this source code
+3. in file **sites/default/settings.php:92 change 
+3. create two databases one for the default installation and other for the site1.com 
+4. Go to the URL that points to this directory follow the drupal installtion select the default drupal installation profile give the database name for the  parent drupal installation.
+5. Go to your dns file, in ubuntu you can find it in /etc/hosts write the alias for the ip address of the default installtion as "site1.com"
+6. got to the url site1.com and select the drupal installation profile to "memorial site1" follow the steps (enter the databasename that you want to use with the site1.com)
+7.Make sure that the admin theme is garland and the default theme is theme4.
+8.got to the site-building -> menus -> settings change the source of the secondary links to primary links.
+9.go to site-building -> blocks and put nice-menu-1 into the header block 
+10. go to the configuration of the the nice-menu-1 block and change :
+                                 block title to <none>
+                                 manu parent to primary links
+                                 menu style  to down
+                                 
+11. goto the site building -> themes -> configure and set path to the custom nice menus cssd file to "sites/site1.com/themes/theme4/css/nice-menu-theme4-custom.css"
+
+Data migration
+====================
+1. create a database CManager.development and copy the old database into it.
+2. goto admin -> content types -> obit_user_links -> edit  comment settings and set node type for comments to comments.
+3. goto admin -> content types -> comments -> edit  comment settings and set node type for comments to comments.
+4. Run command php ./migrate/migrate.php from default drupal directory.
+
+
+
+
