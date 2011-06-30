@@ -1,0 +1,348 @@
+@charset "UTF-8";
+/* reset.css */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* screen.css */
+/*** General Styling ***/
+@font-face {
+    font-family: 'BlueHighway';
+  
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    
+    font-weight: normal;
+    font-style: normal;
+}
+
+body {
+	margin: 0;
+	padding: 0;
+	background: url('../images/bg.jpg') no-repeat #5483BB;
+	font-family: Georgia,"Times New Roman",Times,serif;
+    font-size: 13px;
+    line-height: 18px;
+}
+
+a {text-decoration: none; color: #052247;}
+a:hover {text-decoration: underline;}
+
+div#container  span,div#container  p,
+div#container li,div#container td,
+div#container  h1,div#container h2,div#container  h3,div#container h4,div#container h5,div#container h6 { color: #5382BA;}
+
+div#footer  a,div#footer  span,div#footer  p,
+div#footer li,div#footer td,
+div#footer  h1,div#footer h2,div#footer  h3,div#footer h4,div#footer h5,div#footer h6 { color: #fff;}
+
+p {
+	margin-bottom: 15px;
+}
+
+div#wrapper {
+	width: 900px;
+	margin: 0px auto;
+}
+
+/*** Header Styling ***/
+div#header div.top {
+	padding-top: 10px;
+	overflow: hidden;
+}
+
+div#header div.top div#logo {
+	float: left;
+}
+
+div#header div.top div.featured {
+	float: right;
+}
+
+div#header div.top div.featured {
+	margin-top: 30px;
+	width: 220px;
+}
+
+div#header div.top div.featured ul li {
+	display: block;
+	float: left;
+	margin-left: 15px;
+}
+
+div#header div.top div.featured ul li a {
+	display: block;
+	font: bold 18px/26px 'BlueHighway',sans-serif;
+	padding-left: 27px;	
+	color: #0e376c;
+	text-shadow: 1px 1px 1px #e3eafa;
+	text-decoration: none;
+}
+
+div#header div.top div.featured ul li a.contact { background: url('../images/contact_us.gif') no-repeat left center;}
+div#header div.top div.featured ul li a.gift { background: url('../images/free_gift.gif') no-repeat left center;}
+
+/*** Navigation Styling ***/
+div.navigation-holder {
+	background: url('../images/menu-left.png') no-repeat left center;
+	padding-left: 17px;		
+	margin: 10px 0 10px 80px;
+}
+
+div#navigation ul li a:hover {
+	zoom:1;
+}
+
+div#navigation.menu ul, #navigation.menu ul li {
+	float: left;
+	z-index: 100000;
+}
+
+/*Top level list items*/
+div#navigation.menu ul li {
+	background: url('../images/menu.png') repeat-x left center;
+	position: relative;
+	display: inline;
+	float: left;	
+}
+
+/*Top level menu link items style*/
+div#navigation.menu ul li a {
+	font: 14px/38px 'BlueHighwayD',sans-serif;
+	text-shadow: 1px 1px 1px #a2a2a2;
+	display: block;	
+	color: #052247;
+	padding: 0 15px;
+	text-decoration: none;
+}
+
+div#navigation.menu ul li+li a {
+	background: url('../images/separator.png') no-repeat left center;
+}
+
+* html div#navigation.menu ul li a {
+	display: inline-block;
+}
+
+div#navigation.menu ul li ul li a:link, #navigation.menu ul ul li li a:visited{
+	color: #000;
+}
+
+div#navigation.menu ul li ul li a:hover{
+	background: #ECECEC;
+	color: #000;
+}
+	
+/*1st sub level menu*/
+div#navigation.menu ul li ul{
+	position: absolute;
+	left: 0;
+	display: block;
+	visibility: hidden;
+}
+
+div#navigation.menu ul li ul li {
+	display: list-item;
+	float: none;
+}
+
+div#navigation.menu ul li ul li ul{
+	top: 0;
+}
+
+/* Sub level menu links style */
+div#navigation.menu ul li ul li a{
+	background: #F9F9F9;
+	font: 12px/14px 'Georgia',sans-serif;
+	text-shadow: 1px 1px 1px #fff;
+	width: 160px;
+	padding: 5px;
+	margin: 0;
+	border-top-width: 0;	
+}
+
+div#navigation.menu ul li ul li a {
+	border-bottom: 1px solid #D3D3D3;
+	border-left: 1px solid #D3D3D3;
+	border-right: 1px solid #D3D3D3;
+}
+
+div#navigation div.menu-right {
+	background: url('../images/menu-right.png') no-repeat left top;
+	width: 17px;
+	height: 38px;
+	float: left;
+}
+
+/*** Main Content Styling ***/
+div#container {
+	width: 864px;
+	padding: 18px;
+	background-color: #fff;
+	overflow: hidden;
+}
+
+div#container div.right {
+	float: right;
+	margin: 50px 0 20px 30px;
+}
+
+div#container div.right.contact {
+	margin-top: 0;
+}
+
+div#container h2.welcome {
+	font: 24px/25px 'Times New Roman',sans-serif;
+	margin-bottom: 20px;
+}
+
+div#container div.extra {
+	overflow: hidden;
+	margin-bottom: 17px;
+}
+
+div#container div.signature span{
+	display: block;
+}
+
+div#container a.green {
+	font-weight: bold; 
+	color: green;
+}
+
+/*** Footer Styling ***/
+div#footer {
+	width: 864px;
+	padding: 18px;
+	background-color: #4678B7;
+	overflow: hidden;
+	margin-top: 5px;
+}
+
+div#footer div.block {
+	float: left;
+	padding: 0 10px;
+	min-height: 140px;
+}
+
+div#footer div.block+div.block+div.block {
+	border-left: 1px solid #fff;
+}
+
+div#footer div.block.map {
+	padding: 0;
+}
+
+div#footer div.block.address {
+	width: 280px;
+	
+}
+
+div#footer div.block.address span, div#footer div.block.help a {
+	display: block;
+}
+
+div#footer div.block.help a  {	
+	padding: 7px 0 7px 30px;
+}
+
+div#footer div.block.help a.plan { background: url('../images/plan_in_advance.gif') no-repeat left center; margin-top: 13px;}
+div#footer div.block.help a.immediate { background: url('../images/help.gif') no-repeat left center; }
+
+div#footer ul li {
+	 background: url('../images/li.png') no-repeat left 0.6em;
+	 padding-left: 10px;
+}
+
+div#footer h4 {
+	margin-bottom: 10px;
+}
+
+div#footer div.block.bulletin {
+	width: 200px;
+}
+
+div#bottom {
+	text-align: center;
+	color: #fff;
+	padding-top: 4px;
+	font-size: 11px;   
+}
+
+div#bottom p {	
+    margin: 0; 
+}
+
+div#bottom a.admin {
+	color: #fff;
+	padding-left: 5px;
+}
+
+/*drupal menu bar css is in nice-menu-theme4-custom.css */
+
+#left_content{
+float:left;
+width:22%;
+}
+#main_content{
+float:left;
+width:77%;
+}
+
+/* secondary menus left side bar */
+
+#secondary .secondary_menu li {
+width: 100%;
+float: left;
+border-bottom: 1px dotted #CCC;
+margin-bottom: 4px;
+padding-bottom: 4px;
+font-family: Georgia, "Times New Roman", Times, serif;
+font-size: 13px;
+line-height: 18px;
+}
+
+

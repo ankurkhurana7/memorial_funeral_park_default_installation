@@ -1,0 +1,13 @@
+; $Id$
+name = theme4
+core = 6.x
+engine = phptemplate
+regions[left] = Left sidebar
+; We do not have a right sidebar.
+; regions[right] = Right sidebar
+regions[content] = Content
+regions[header] = Header
+regions[footer] = Footer
+
+stylesheets[all][] = css/style.css
+stylesheets[all][] = css/nice-menu-theme4-custom.css

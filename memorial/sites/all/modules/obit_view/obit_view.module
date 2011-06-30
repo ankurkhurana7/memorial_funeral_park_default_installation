@@ -1,0 +1,3 @@
+<?php
+
+include_once('obit_view.features.inc');

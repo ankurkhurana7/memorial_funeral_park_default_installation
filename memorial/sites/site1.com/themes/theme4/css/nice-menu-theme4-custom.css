@@ -1,0 +1,94 @@
+
+/*** Navigation Styling ***/
+#block-nice_menus-1{
+	background: url('../images/menu-left.png') no-repeat left center;
+	padding-left: 17px;
+	margin: 10px 0 1px 80px;
+	background-position:13px 0px;
+}
+
+#nice-menu-1 li a:hover {
+	zoom:1;
+}
+
+#nice-menu-1 , #nice-menu-1 li {
+	float: left;
+	z-index: 100000;
+}
+
+/*Top level list items*/
+#nice-menu-1 li {
+	background: url('../images/menu.png') repeat-x left center;
+	position: relative;
+	display: inline;
+	float: left;	
+}
+
+/*Top level menu link items style*/
+#nice-menu-1 li a {
+	font: 14px/38px 'BlueHighwayD',sans-serif;
+	text-shadow: 1px 1px 1px #a2a2a2;
+	display: block;	
+	color: #052247;
+	padding: 0 15px;
+	text-decoration: none;
+}
+
+#nice-menu-1 li+li a {
+	background: url('../images/separator.png') no-repeat left center;
+}
+
+* html div#nice-menu-1 li a {
+	display: inline-block;
+}
+
+#nice-menu-1 li ul li a:link, #nice-menu-1 ul li li a:visited{
+	color: #000;
+}
+
+#nice-menu-1 li ul li a:hover{
+	background: #ECECEC;
+	color: #000;
+}
+	
+/*1st sub level menu*/
+#nice-menu-1 li ul{
+	position: absolute;
+	left: 0;
+	display: block;
+	visibility: hidden;
+}
+
+#nice-menu-1 li ul li {
+	display: list-item;
+	float: none;
+}
+
+#nice-menu-1 li ul li ul{
+	top: 0;
+}
+
+/* Sub level menu links style */
+#nice-menu-1 li ul li a{
+	background: #F9F9F9;
+	font: 12px/14px 'Georgia',sans-serif;
+	text-shadow: 1px 1px 1px #fff;
+	width: 160px;
+	padding: 5px;
+	margin: 0;
+	border-top-width: 0;	
+}
+
+#nice-menu-1 li ul li a {
+	border-bottom: 1px solid #D3D3D3;
+	border-left: 1px solid #D3D3D3;
+	border-right: 1px solid #D3D3D3;
+}
+
+.menu-right {
+	background: url('../images/menu-right.png') no-repeat left top;
+	width: 17px;
+	height: 38px;
+	float:left;
+	
+}
